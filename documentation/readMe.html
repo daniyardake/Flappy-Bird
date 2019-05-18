@@ -1,0 +1,202 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Flappy Bird JavaFx</title>
+
+	<meta name="description" content="">
+	<meta name="author" content="Daniyar Aubekerov">
+	<meta name="copyright" content="Daniyar Aubekerov">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2019-05-17T00:00:00+02:00">
+
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+
+
+	<script src="assets/js/jquery.js"></script>
+
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+
+</head>
+<body class="documenter-project-flappy-bird-javafx">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+
+			<li><a href="#flappy_square_main" title="Flappy Square (Main)">Flappy Square (Main)</a></li>
+			<li><a href="#barrier" title="Barrier">Barrier</a></li>
+			<li><a href="#bird" title="Bird">Bird</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Daniyar Aubekerov 2019<br>
+	</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Flappy Bird JavaFx</h1>
+
+	<div id="documenter_buttons">
+
+	</div>
+	<hr>
+	<ul>
+	<li>created: 03/10/2011</li>
+	<li>latest update: 05/17/2019</li>
+	<li>by: Daniyar Aubekerov</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:D&#97;&#117;&#98;&#101;&#107;&#101;&#114;&#64;&#98;&#104;&#99;&#99;&#46;&#101;&#100;&#117;">D&#97;&#117;&#98;&#101;&#107;&#101;&#114;&#64;&#98;&#104;&#99;&#99;&#46;&#101;&#100;&#117;</a></li>
+	</ul>
+	<p>Simple Flappy Bird game</p>
+	</section>
+
+	<section id="flappy_square_main">
+	<div class="page-header"><h3>Flappy Square (Main)</h3><hr class="notop"></div>
+<p>
+	Start Here</p>
+</section>
+<section id="barrier">
+	<div class="page-header"><h3>Barrier</h3><hr class="notop"></div>
+<p class="alert alert-success">
+	<strong>Barrier is the wall that can kill Flappy Bird. Barriers will be later created as an array list.</strong></p>
+<div class="alert alert-success">
+	Barrier</div>
+<div class="alert alert-info">
+	+rect: Recrangle</div>
+<div class="alert alert-info">
+	+height: int</div>
+<div>
+	&nbsp;</div>
+<p>
+	&nbsp;</p>
+<p>
+	Pseudocode:</p>
+<pre class="prettyprint lang-js linenums">
+Barrier{
+create green rectangle of size 20x20;
+}</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="bird">
+	<div class="page-header"><h3>Bird</h3><hr class="notop"></div>
+<div>
+	Bird is a square that is manipulated by <strong>speed&nbsp;</strong>point. Speed point is (kinda) vector, which showing direction in which bird should move. Also, depending on moveUp or moveDown image of rectangle changes.</div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div class="alert alert-success">
+	Bird</div>
+<div class="alert alert-info">
+	+ speed: Point2D</div>
+<div class="alert alert-info">
+	+ rect: Rectangle</div>
+<div class="alert alert-info">
+	+ lost: boolean</div>
+<div class="alert alert-info">
+	+ imgUp: Image</div>
+<div class="alert alert-info">
+	+ imgDown: Image</div>
+<div class="alert alert-info">
+	+ imageUp: ImagePattern</div>
+<div class="alert alert-info">
+	+ imageDown: ImagePattern</div>
+<div class="alert alert-info">
+	+ moveY(y: int ): void</div>
+<div class="alert alert-info">
+	+ moveX (x: int ): void</div>
+<div class="alert alert-info">
+	+ jump(): void</div>
+<div>
+	&nbsp;</div>
+<div>
+	Pseudocode:</div>
+<div>
+	&nbsp;</div>
+<pre class="prettyprint lang-js linenums">
+Bird{
+create point
+create rectangle
+create boolean value
+create two images
+
+Create Bird()
+
+moveX: move x coordinate of rectangle
+loop through barriers
+if barrier intersect bird-&gt;lost
+if bird passed barier -&gt; beep() and score++
+move x coordinate
+
+moveY:
+if input value&gt;0 then moveDown is true and set image downFlag
+else moveDown is false and set image upFlag
+
+move y coordinate of rectangle
+loop through barriers
+if barrier intersect bird-&gt;lost
+
+if y coordinate &lt;0 set it 0
+if y coordinate &gt;580 (which is 600-20) then lost
+
+move y coordinate
+}</pre>
+<div>
+	&nbsp;</div>
+</section>
+
+	</div>
+</body>
+</html>
